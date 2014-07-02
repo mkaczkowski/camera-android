@@ -1,0 +1,1 @@
+angular.module("sioWebApp.contact",[]),angular.module("sioWebApp.contact").controller("ContactCtrl",["$scope",function(a){a.awesomeThings=["HTML5 Boilerplate","AngularJS","Karma"]}]);
