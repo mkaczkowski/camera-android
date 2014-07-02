@@ -31,6 +31,9 @@
     <feature name="Canvas2ImagePlugin">
         <param name="android-package" value="org.devgeeks.Canvas2ImagePlugin.Canvas2ImagePlugin" />
     </feature>
+    <feature name="Wallpaper">
+        <param name="android-package" value="ca.purplemad.wallpaper.Wallpaper" />
+    </feature>
     <name>HelloCordova</name>
     <description>
         An Ionic Framework and Cordova project.

@@ -39,6 +39,10 @@
                         {
                             "xml": "<feature name=\"Canvas2ImagePlugin\"><param name=\"android-package\" value=\"org.devgeeks.Canvas2ImagePlugin.Canvas2ImagePlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Wallpaper\"><param name=\"android-package\" value=\"ca.purplemad.wallpaper.Wallpaper\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -48,6 +52,18 @@
                     "/manifest": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.SET_WALLPAPER\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
                         }
                     ],
@@ -91,6 +107,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "org.devgeeks.Canvas2ImagePlugin": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "ca.purplemad.wallpaper": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },

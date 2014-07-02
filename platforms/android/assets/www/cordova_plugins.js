@@ -230,6 +230,13 @@ module.exports = [
         "clobbers": [
             "window.canvas2ImagePlugin"
         ]
+    },
+    {
+        "file": "plugins/ca.purplemad.wallpaper/www/wallpaper.js",
+        "id": "ca.purplemad.wallpaper.Wallpaper",
+        "clobbers": [
+            "window.wallpaper"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -243,7 +250,8 @@ module.exports.metadata =
     "org.apache.cordova.dialogs": "0.2.8",
     "org.apache.cordova.file": "1.2.0",
     "org.apache.cordova.network-information": "0.2.10",
-    "org.devgeeks.Canvas2ImagePlugin": "0.6.0"
+    "org.devgeeks.Canvas2ImagePlugin": "0.6.0",
+    "ca.purplemad.wallpaper": "0.2.0"
 }
 // BOTTOM OF METADATA
 });
