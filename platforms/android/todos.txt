@@ -1,0 +1,19 @@
+- usunac przezroczystosc na dole i gorze podczas drag obrazka
+- dodac male odstepy dla elementow w gornej belce
+- powiekszyc elementy w gornej belce
+- share button
+- camera img -> html container
+- rate us
+- po kliknieciu zapisz niech sie z doly pojawi actionsheet (http://ionicframework.com/docs/api/service/$ionicActionSheet/):
+	-> zapisz w albumie
+	-> zapisz na dysku?
+	-> ustaw jako tapete
+- zaimplementowac zapis grafiki na dysk
+- dodac alert po poprawnym zapisaniu $ionicPopup.alert (http://ionicframework.com/docs/api/service/$ionicPopup/)
+
+
+
+>>>>>>>
+- crop obrazka z kamerki
+- przesylanie obrazkow na openshift
+- baza danych i nodejs na openshift
