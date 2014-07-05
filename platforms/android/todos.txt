@@ -13,7 +13,41 @@
 
 
 
+
+
+- wylaczyc TRASH gdy isEmpty
+- jak sie probuje przeciagac tlo to pozniej nie mozna dodac kafelkow?!
+- klikniecie poza kafelek w obecie kontenera dezaktywuje kafelek
+- mirror image: context.scale(-1, 1);
+- wylaczyc logi na prod (zastapic console.log)
+- rate us nie dziala
+- zrobic ikone
+- config appki w android oraz config.js
+
+
 >>>>>>>
 - crop obrazka z kamerki
 - przesylanie obrazkow na openshift
 - baza danych i nodejs na openshift
+
+
+#########################################
+
+
+APPS
+hair woman (http://thestardollprops.deviantart.com/gallery/)
+super heroes 
+anime hair/eyes ( http://www.google.pl/imgres?imgurl=http%3A%2F%2Ffc02.deviantart.net%2Ffs70%2Ff%2F2013%2F164%2F8%2F4%2Fmmd_huge_njxa_hair_pack___njxa_texture_pack_by_amiamy111-d68xasb.png&imgrefurl=http%3A%2F%2Fwww.deviantart.com%2Fmorelikethis%2Fcollections%2F377787611&h=780&w=1270&tbnid=4skZ2nqmxJJEJM%3A&zoom=1&docid=6q2c4WSAga2SYM&ei=QRm3U4TLNsLY7AbJx4CABQ&tbm=isch&ved=0CC4QMygOMA4&iact=rc&uact=3&dur=732&page=1&start=0&ndsp=16 )
+halloween
+love
+mustaches
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+CARDS: http://vitalets.github.io/angular-xeditable/#text-customize
+http://www.mypokecard.com/pl/
+http://www.mtgcardmaker.com/
+http://www.pokecard.net/
+http://www.pokemoncardapp.com/
+
