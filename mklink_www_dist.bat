@@ -1,0 +1,1 @@
+mklink /d www D:\WORKSPACE\camera-app\dist

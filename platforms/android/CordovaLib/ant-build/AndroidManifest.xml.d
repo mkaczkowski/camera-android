@@ -1,2 +1,2 @@
-C:\WORKSPACE\myApp\platforms\android\CordovaLib\ant-build\AndroidManifest.xml : \
-C:\WORKSPACE\myApp\platforms\android\CordovaLib\AndroidManifest.xml \
+D:\WORKSPACE\camera-android\platforms\android\CordovaLib\ant-build\AndroidManifest.xml : \
+D:\WORKSPACE\camera-android\platforms\android\CordovaLib\AndroidManifest.xml \
