@@ -1,4 +1,4 @@
-C:\WORKSPACE\myApp\platforms\android\ant-build\HelloCordova-debug-unaligned.apk : \
-C:\WORKSPACE\myApp\platforms\android\ant-build\HelloCordova.ap_ \
-C:\WORKSPACE\myApp\platforms\android\ant-build\classes.dex \
-C:\WORKSPACE\myApp\platforms\android\CordovaLib\ant-build\classes.jar \
+D:\WORKSPACE\camera-android\platforms\android\ant-build\HelloCordova-debug-unaligned.apk : \
+D:\WORKSPACE\camera-android\platforms\android\ant-build\HelloCordova.ap_ \
+D:\WORKSPACE\camera-android\platforms\android\ant-build\classes.dex \
+D:\WORKSPACE\camera-android\platforms\android\CordovaLib\ant-build\classes.jar \

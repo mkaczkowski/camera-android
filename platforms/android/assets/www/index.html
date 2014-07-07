@@ -1,9 +1,4 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width"> <title></title> <link rel="stylesheet" href="styles/main.6a39cd28.css">  <body ng-app="sioWebApp" animation="slide-left-right-ios7" style="height: 100%"> <div class="bar bar-header bar-energized"> <h1 class="title">Header Buttons</h1> <button class="button icon ion-android-star"></button> </div> <div ui-view></div> <!--<div id="dragContainer" style="width: 600px; height: 1000px; background-color: #ffe5e5">
-	<draggable-item id="hitarea" src="images/thumbs/owl2.480586fa.jpg" />
-</div>--> <!-- grunt wiredep:app --> <script src="scripts/vendor.8926d87f.js"></script> <script src="libs/ng-cordova.js"></script> <script src="libs/owl.carousel.js"></script> <script src="cordova.js"></script> <!--TMP::not dist--> <script src="tmp/hammer.fakemultitouch.js"></script> <script src="tmp/hammer.showtouches.js"></script> <script src="tmp/wallpaper.js"></script> <script src="scripts/scripts.c16f1ade.js"></script> <!--NG-CORDOVA--> <!--<script src="tmp/Camera.js"></script>
-<script src="tmp/CameraConstants.js"></script>
-<script src="tmp/CameraPopoverHandle.js"></script>
-<script src="tmp/CameraPopoverOptions.js"></script>--> <script>FastClick.attach(document.body, {});
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width"> <title></title> <link rel="stylesheet" href="styles/main.cb43601a.css">  <body ng-app="sioWebApp" data-ng-controller="HomeCtrl" style="height: 100%"> <div class="bar bar-header bar-energized"> <h1 class="title">Saiyan Camera</h1> <button class="button icon ion-android-star" ng-click="rateUs()"></button> </div> <ng-include src="'views/home/home.html'"></ng-include> <!-- grunt wiredep:app --> <script src="scripts/vendor.75a4f74a.js"></script> <script src="libs/ng-cordova.js"></script> <script src="libs/owl.carousel.js"></script> <script src="cordova.js"></script> <!--TMP::not dist--> <script src="tmp/hammer.fakemultitouch.js"></script> <script src="tmp/hammer.showtouches.js"></script> <script src="tmp/wallpaper.js"></script> <script src="tmp/CameraConstants.js"></script> <script src="tmp/CameraPopoverOptions.js"></script> <script src="scripts/scripts.aa2f40df.js"></script> <script>FastClick.attach(document.body, {});
 
 	if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
 		Hammer.plugins.showTouches();
@@ -11,11 +6,4 @@
 
 	if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
 		Hammer.plugins.fakeMultitouch();
-	}
-
-	/*var hammertime = Hammer(document.getElementById("hitarea"),{
-		preventDefault: true,
-		gesture: true
-	}).on("tap", function(event) {
-		alert('hello!');
-	});*/</script>  
+	}</script>  

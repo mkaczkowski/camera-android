@@ -1,10 +1,24 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/ca.purplemad.wallpaper/www/wallpaper.js",
+        "id": "ca.purplemad.wallpaper.Wallpaper",
+        "clobbers": [
+            "window.wallpaper"
+        ]
+    },
+    {
         "file": "plugins/com.ionic.keyboard/www/keyboard.js",
         "id": "com.ionic.keyboard.keyboard",
         "clobbers": [
             "cordova.plugins.Keyboard"
+        ]
+    },
+    {
+        "file": "plugins/com.xmartlabs.cordova.market/www/market.js",
+        "id": "com.xmartlabs.cordova.market.Market",
+        "clobbers": [
+            "cordova.plugins.market"
         ]
     },
     {
@@ -230,19 +244,14 @@ module.exports = [
         "clobbers": [
             "window.canvas2ImagePlugin"
         ]
-    },
-    {
-        "file": "plugins/ca.purplemad.wallpaper/www/wallpaper.js",
-        "id": "ca.purplemad.wallpaper.Wallpaper",
-        "clobbers": [
-            "window.wallpaper"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "ca.purplemad.wallpaper": "0.2.0",
     "com.ionic.keyboard": "1.0.2",
+    "com.xmartlabs.cordova.market": "1.0",
     "nl.x-services.plugins.socialsharing": "4.3.1",
     "org.apache.cordova.camera": "0.3.0",
     "org.apache.cordova.console": "0.2.9",
@@ -250,8 +259,7 @@ module.exports.metadata =
     "org.apache.cordova.dialogs": "0.2.8",
     "org.apache.cordova.file": "1.2.0",
     "org.apache.cordova.network-information": "0.2.10",
-    "org.devgeeks.Canvas2ImagePlugin": "0.6.0",
-    "ca.purplemad.wallpaper": "0.2.0"
+    "org.devgeeks.Canvas2ImagePlugin": "0.6.0"
 }
 // BOTTOM OF METADATA
 });

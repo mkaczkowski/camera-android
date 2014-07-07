@@ -1,5 +1,15 @@
 package org.devgeeks.Canvas2ImagePlugin;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.Calendar;
+
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,13 +18,6 @@ import android.os.Build;
 import android.os.Environment;
 import android.util.Base64;
 import android.util.Log;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.util.Calendar;
-import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaPlugin;
-import org.json.JSONArray;
-import org.json.JSONException;
 
 /**
  * Canvas2ImagePlugin.java
@@ -29,35 +32,33 @@ public class Canvas2ImagePlugin extends CordovaPlugin {
 	public static final String ACTION = "saveImageDataToLibrary";
 
 	@Override
-	public boolean execute(String action, final JSONArray data, final CallbackContext callbackContext) throws JSONException {
+	public boolean execute(String action, JSONArray data,
+			CallbackContext callbackContext) throws JSONException {
 
 		if (action.equals(ACTION)) {
-			cordova.getThreadPool().execute(new Runnable() {
-				public void run() {
-					String base64 = data.optString(0);
-					if (base64.equals("")) // isEmpty() requires API level 9
-						callbackContext.error("Missing base64 string");
 
-					// Create the bitmap from the base64 string
-					Log.d("Canvas2ImagePlugin", base64);
-					byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
-					Bitmap bmp = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
-					if (bmp == null) {
-						callbackContext.error("The image could not be decoded");
-					} else {
-
-						// Save the image
-						File imageFile = savePhoto(bmp);
-						if (imageFile == null)
-							callbackContext.error("Error while saving image");
-
-						// Update image gallery
-						scanPhoto(imageFile);
-
-						callbackContext.success(imageFile.toString());
-					}
-				}
-			});
+			String base64 = data.optString(0);
+			if (base64.equals("")) // isEmpty() requires API level 9
+				callbackContext.error("Missing base64 string");
+			
+			// Create the bitmap from the base64 string
+			Log.d("Canvas2ImagePlugin", base64);
+			byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
+			Bitmap bmp = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+			if (bmp == null) {
+				callbackContext.error("The image could not be decoded");
+			} else {
+				
+				// Save the image
+				File imageFile = savePhoto(bmp);
+				if (imageFile == null)
+					callbackContext.error("Error while saving image");
+				
+				// Update image gallery
+				scanPhoto(imageFile);
+				
+				callbackContext.success(imageFile.toString());
+			}
 			
 			return true;
 		} else {

@@ -9,7 +9,15 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"Wallpaper\"><param name=\"android-package\" value=\"ca.purplemad.wallpaper.Wallpaper\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"com.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Market\"><param name=\"android-package\" value=\"com.xmartlabs.cordova.market.Market\" /></feature>",
                             "count": 1
                         },
                         {
@@ -39,10 +47,6 @@
                         {
                             "xml": "<feature name=\"Canvas2ImagePlugin\"><param name=\"android-package\" value=\"org.devgeeks.Canvas2ImagePlugin.Canvas2ImagePlugin\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Wallpaper\"><param name=\"android-package\" value=\"ca.purplemad.wallpaper.Wallpaper\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -51,12 +55,12 @@
                 "parents": {
                     "/manifest": [
                         {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
-                        },
-                        {
                             "xml": "<uses-permission android:name=\"android.permission.SET_WALLPAPER\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -82,7 +86,13 @@
         }
     },
     "installed_plugins": {
+        "ca.purplemad.wallpaper": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
         "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "com.xmartlabs.cordova.market": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "nl.x-services.plugins.socialsharing": {
@@ -107,9 +117,6 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "org.devgeeks.Canvas2ImagePlugin": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "ca.purplemad.wallpaper": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },
